@@ -1,10 +1,12 @@
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function RootLayout() {
+export default function App() {
   return (
-    <View style={ styles.container }>
-      <Text>RootLayout</Text>
+    <View style={styles.container}>
+      <Text>Aora</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -12,7 +14,7 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    display: 'flex',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
